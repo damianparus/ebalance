@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### MongoDB local data ###
-/docker/mongodb/data/
+/docker/devel/mongodb/data/
