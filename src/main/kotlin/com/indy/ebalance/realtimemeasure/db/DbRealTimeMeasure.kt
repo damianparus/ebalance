@@ -1,8 +1,7 @@
 package com.indy.ebalance.realtimemeasure.db
 
-
-import com.indy.ebalance.device.dto.DeviceIdType
-import com.indy.ebalance.realtimemeasure.dto.MeasureDate
+import com.indy.ebalance.device.DeviceIdType
+import com.indy.ebalance.realtimemeasure.MeasureDate
 import org.springframework.data.mongodb.core.index.CompoundIndex
 import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
