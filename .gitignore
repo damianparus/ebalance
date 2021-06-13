@@ -36,5 +36,6 @@ out/
 ### VS Code ###
 .vscode/
 
-### MongoDB local data ###
+### Databases local data ###
 /docker/devel/mongodb/data/
+/docker/devel/clickhouse/data/

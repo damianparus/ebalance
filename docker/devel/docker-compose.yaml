@@ -9,7 +9,14 @@ services:
       - PGID=1000
     volumes:
       - ./mongodb/data:/data/db
-      - ./mongodb/init/init.js:/docker-entrypoint-initdb.d/init.js:ro
+      - ./mongodb/init/:/docker-entrypoint-initdb.d/:ro
     ports:
       - 27017:27017
     restart: unless-stopped
+  clickhouse-ebalance:
+    image: yandex/clickhouse-server
+    ports:
+      - 8123:8123
+    volumes:
+      - ./clickhouse/data:/var/lib/clickhouse
+      - ./clickhouse/init/:/docker-entrypoint-initdb.d/:ro
