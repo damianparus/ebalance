@@ -1,4 +1,5 @@
 spring.data.mongodb:
   host: localhost
+  database: ebalance_local
   port: 27017
   auto-index-creation: true
