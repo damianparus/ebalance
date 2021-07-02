@@ -1,7 +1,7 @@
 package com.indy.ebalance.realtimemeasure.db
 
 import com.indy.ebalance.device.DeviceIdType
-import com.indy.ebalance.realtimemeasure.MeasureDate
+import com.indy.ebalance.realtimemeasure.MeasureTimeType
 import org.springframework.data.mongodb.core.index.CompoundIndex
 import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.Field
@@ -14,9 +14,9 @@ data class DbRealTimeMeasure(
 
     val deviceId: DeviceIdType,
 
-    val measureDate: MeasureDate,
+    val measureTime: MeasureTimeType,
 
     @Field(targetType = FieldType.DECIMAL128)
-    val measure: BigDecimal
+    val measureValue: BigDecimal
 
 )

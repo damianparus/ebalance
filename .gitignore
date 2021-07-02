@@ -38,4 +38,3 @@ out/
 
 ### Databases local data ###
 /docker/devel/mongodb/data/
-/docker/devel/clickhouse/data/

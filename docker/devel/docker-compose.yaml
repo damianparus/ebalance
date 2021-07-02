@@ -13,10 +13,3 @@ services:
     ports:
       - 27017:27017
     restart: unless-stopped
-  clickhouse-ebalance:
-    image: yandex/clickhouse-server
-    ports:
-      - 8123:8123
-    volumes:
-      - ./clickhouse/data:/var/lib/clickhouse
-      - ./clickhouse/init/:/docker-entrypoint-initdb.d/:ro
