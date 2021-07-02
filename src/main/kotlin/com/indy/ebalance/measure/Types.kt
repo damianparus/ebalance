@@ -1,4 +1,4 @@
-package com.indy.ebalance.realtimemeasure
+package com.indy.ebalance.measure
 
 import java.math.BigDecimal
 
