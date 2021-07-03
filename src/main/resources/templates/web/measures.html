@@ -4,13 +4,16 @@
     <head th:replace="fragments/layout.html :: head" />
     <body>
 
-
         <div th:replace="fragments/layout.html :: header" />
+
+
+        <div style="width: 100px; height: 100px;" id="chartDiv"></div>
+        <script src="/js/chart.js-3.4.0.js"></script>
+        <script src="/js/measures/measures.js"></script>
+
+
         <div th:replace="fragments/layout.html :: footer" />
 
-        <div id="like_button_container"></div>
-
-        <script src="/js/measures/measures.js"></script>
 
     </body>
 </html>
