@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/api/")
 class ApiController(private val measureService: MeasureService) {
 
-    @PostMapping("/measure")
+    @PostMapping("/measures")
     fun newMeasure(@RequestBody newMeasureRequest: NewMeasureRequest): NewMeasureResponse {
         measureService.newMeasure(newMeasureRequest = newMeasureRequest)
         return NewMeasureResponse(
