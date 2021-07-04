@@ -2,7 +2,7 @@
 
 const e = React.createElement;
 
-class LikeButton extends React.Component {
+class MeasuresList extends React.Component {
 
     constructor(props) {
         super(props);
@@ -46,6 +46,6 @@ class LikeButton extends React.Component {
 }
 
 ReactDOM.render(
-    e(LikeButton),
+    e(MeasuresList),
     document.querySelector('#itemsList')
 );
