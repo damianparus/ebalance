@@ -12,7 +12,7 @@ import java.math.BigDecimal
 @CompoundIndex(name = "dimensionId_measureTime_idx", def = "{'dimensionId':1, 'measureTime':1}", unique = true)
 data class DbMeasure(
 
-    val dimesionId: DimesionIdType,
+    val dimensionId: DimesionIdType,
 
     val measureTime: MeasureTimeType,
 
