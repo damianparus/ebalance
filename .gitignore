@@ -38,3 +38,6 @@ out/
 
 ### Databases local data ###
 /docker/devel/mongodb/data/
+
+### Node
+/node_modules/
