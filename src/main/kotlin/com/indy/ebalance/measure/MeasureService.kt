@@ -9,7 +9,7 @@ class MeasureService(val measureRepository: MeasureRepository) {
 
     fun newMeasure(measure: Measure) {
         val dbMeasure = DbMeasure(
-            dimensionId = measure.dimesionId,
+            dimensionId = measure.dimensionId,
             measureTime = measure.measureTime,
             measureValue = measure.measureValue
         )
@@ -21,7 +21,7 @@ class MeasureService(val measureRepository: MeasureRepository) {
             .findAll()
             .map {
                 Measure(
-                dimesionId = it.dimensionId,
+                dimensionId = it.dimensionId,
                 measureTime = it.measureTime,
                 measureValue = it.measureValue
             ) }

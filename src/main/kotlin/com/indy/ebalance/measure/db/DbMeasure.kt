@@ -1,6 +1,6 @@
 package com.indy.ebalance.measure.db
 
-import com.indy.ebalance.dimension.DimesionIdType
+import com.indy.ebalance.dimension.DimensionIdType
 import com.indy.ebalance.measure.MeasureTimeType
 import org.springframework.data.mongodb.core.index.CompoundIndex
 import org.springframework.data.mongodb.core.mapping.Document
@@ -12,7 +12,7 @@ import java.math.BigDecimal
 @CompoundIndex(name = "dimensionId_measureTime_idx", def = "{'dimensionId':1, 'measureTime':1}", unique = true)
 data class DbMeasure(
 
-    val dimensionId: DimesionIdType,
+    val dimensionId: DimensionIdType,
 
     val measureTime: MeasureTimeType,
 

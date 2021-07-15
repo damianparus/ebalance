@@ -1,9 +1,9 @@
 package com.indy.ebalance.measure
 
-import com.indy.ebalance.dimension.DimesionIdType
+import com.indy.ebalance.dimension.DimensionIdType
 
 data class Measure(
-    val dimesionId: DimesionIdType,
+    val dimensionId: DimensionIdType,
     val measureTime: MeasureTimeType,
     val measureValue: MeasureValueType
 )
